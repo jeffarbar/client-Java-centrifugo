@@ -16,3 +16,6 @@ userId: is the user id created in the centrifugal
 userToken: is the centrifugal token
 tokenTimestamp: is the timestamp in string of the moment the token was generated for the client
 token: is the client access token.
+
+
+Main class has an example.
