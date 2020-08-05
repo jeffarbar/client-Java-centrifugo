@@ -1,4 +1,4 @@
-package com.tivit.centrifugo;
+package com.centrifugo;
 
 
 
@@ -8,25 +8,25 @@ import javax.net.ssl.SSLSocketFactory;
 
 
 
-import com.tivit.centrifugo.async.Future;
-import com.tivit.centrifugo.config.ReconnectConfig;
-import com.tivit.centrifugo.credentials.Token;
-import com.tivit.centrifugo.credentials.User;
-import com.tivit.centrifugo.listener.ConnectionListener;
-import com.tivit.centrifugo.listener.DataMessageListener;
-import com.tivit.centrifugo.listener.DownstreamMessageListener;
-import com.tivit.centrifugo.listener.JoinLeaveListener;
-import com.tivit.centrifugo.listener.SubscriptionListener;
-import com.tivit.centrifugo.message.DataMessage;
-import com.tivit.centrifugo.message.DownstreamMessage;
-import com.tivit.centrifugo.message.SubscribeMessage;
-import com.tivit.centrifugo.message.history.HistoryMessage;
-import com.tivit.centrifugo.message.presence.JoinMessage;
-import com.tivit.centrifugo.message.presence.LeftMessage;
-import com.tivit.centrifugo.message.presence.PresenceMessage;
-import com.tivit.centrifugo.subscription.ActiveSubscription;
-import com.tivit.centrifugo.subscription.SubscriptionRequest;
-import com.tivit.centrifugo.ssl.NaiveSSLContext;
+import com.centrifugo.async.Future;
+import com.centrifugo.config.ReconnectConfig;
+import com.centrifugo.credentials.Token;
+import com.centrifugo.credentials.User;
+import com.centrifugo.listener.ConnectionListener;
+import com.centrifugo.listener.DataMessageListener;
+import com.centrifugo.listener.DownstreamMessageListener;
+import com.centrifugo.listener.JoinLeaveListener;
+import com.centrifugo.listener.SubscriptionListener;
+import com.centrifugo.message.DataMessage;
+import com.centrifugo.message.DownstreamMessage;
+import com.centrifugo.message.SubscribeMessage;
+import com.centrifugo.message.history.HistoryMessage;
+import com.centrifugo.message.presence.JoinMessage;
+import com.centrifugo.message.presence.LeftMessage;
+import com.centrifugo.message.presence.PresenceMessage;
+import com.centrifugo.subscription.ActiveSubscription;
+import com.centrifugo.subscription.SubscriptionRequest;
+import com.centrifugo.ssl.NaiveSSLContext;
 
 import org.java_websocket.WebSocket;
 import org.java_websocket.WebSocketAdapter;
@@ -586,7 +586,7 @@ public class Centrifugo {
             super(serverURI, draft);
             clientThread = new Thread(this, "Centrifugo");
         }
-
+jefferson
         public Thread getClientThread() {
             return clientThread;
         }
