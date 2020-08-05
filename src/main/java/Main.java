@@ -1,18 +1,18 @@
 
 import org.json.JSONObject;
-import com.tivit.centrifugo.credentials.Token;
-import com.tivit.centrifugo.credentials.User;
-import com.tivit.centrifugo.listener.ConnectionListener;
-import com.tivit.centrifugo.listener.DataMessageListener;
-import com.tivit.centrifugo.message.DataMessage;
-import com.tivit.centrifugo.subscription.SubscriptionRequest;
-import com.tivit.centrifugo.Centrifugo;
+import com.centrifugo.credentials.Token;
+import com.centrifugo.credentials.User;
+import com.centrifugo.listener.ConnectionListener;
+import com.centrifugo.listener.DataMessageListener;
+import com.centrifugo.message.DataMessage;
+import com.centrifugo.subscription.SubscriptionRequest;
+import com.centrifugo.Centrifugo;
 
 
 
 public class Main {
 
-	static String centrifugoAddress = "wss://stage.hub.tivit.com.br/connection/websocket";
+	static String centrifugoAddress = "wss://stage.hub.com.br/connection/websocket";
 	static String userId = "4";
 	static String userToken = "6d72fcd9-db86-4dd2-a6d9-5030fe7de582"; //nullable
 	static String token = "09fe11a9983d2992e6197d365b943e8007462bf4a49972b67db5a34fbfa74608";
